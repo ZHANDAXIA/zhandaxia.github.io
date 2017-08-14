@@ -1,0 +1,292 @@
+html,body,h1,h2,h3,h4,div,form,input,select,textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+input,select,textarea {
+	outline: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	background: #eee;
+}
+
+.header {
+	position: relative;
+	width: 7.2rem;
+	padding: 0.25rem 0;
+	border-top: 0.01rem solid #d3d1d1;
+	border-bottom: 0.01rem solid #d3d1d1;
+	text-align: center;
+	background: #fff;
+}
+
+.header .logo {
+	display: block;
+	width: 2.25rem;
+	height: 0.46rem;
+	margin: 0 auto;
+	background: url(../images/logo.png) no-repeat;
+	background-size: cover;
+}
+
+.main .banner {
+	display: block;
+	width: 7.2rem;
+	height: 3.0rem;
+}
+
+.main .introduce .i-list {
+	width: 6.92rem;
+	margin-left: 0.2rem;
+	padding-top: 0.2rem;
+}
+
+.main .introduce .i-l-item {
+	width: 3.34rem;
+	height: 5.6rem;
+	margin-right: 0.12rem;
+	margin-bottom: 0.15rem;
+	background: #fff;
+	text-align: center;
+	word-break: break-all;
+}
+
+.main .introduce .i-l-item .icon {
+	display: block;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin: 0.28rem auto 0.2rem;
+}
+
+.main .introduce .i-l-item .title {
+	line-height: 0.3rem;
+	font-size: 0.3rem;
+	color: #363635;
+}
+
+.main .introduce .i-l-item .text {
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	line-height: 0.4rem;
+	font-size: 0.26rem;
+	color: #ababab;
+}
+
+.main .introduce .i-l-item .icon-lead {
+	background: url(../images/icon-join.jpg) no-repeat;
+	background-size: 1.7rem 10rem;
+}
+
+.main .introduce .i-l-item .icon-advantage {
+	background: url(../images/icon-join.jpg) no-repeat;
+	background-position: 0 -1.62rem;
+	background-size: 1.7rem 10rem;
+}
+
+.main .introduce .i-l-item .icon-fast {
+	background: url(../images/icon-join.jpg) no-repeat;
+	background-position: 0 -3.24rem;
+	background-size: 1.7rem 10rem;
+}
+
+.main .introduce .i-l-item .icon-efficient {
+	background: url(../images/icon-join.jpg) no-repeat;
+	background-position: 0 -4.86rem;
+	background-size: 1.7rem 10rem;
+}
+
+.main .introduce .i-l-item .icon-famous {
+	background: url(../images/icon-join.jpg) no-repeat;
+	background-position: 0 -6.48rem;
+	background-size: 1.7rem 10rem;
+}
+
+.main .introduce .i-l-item .icon-profession {
+	background: url(../images/icon-join.jpg) no-repeat;
+	background-position: 0 -8.1rem;
+	background-size: 1.7rem 10rem;
+}
+
+.main .join {
+	width: 6.8rem;
+	margin: 0.15rem 0.2rem 0;
+}
+
+.main .join .j-title {
+	line-height: 0.8rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #fff;
+	background: #88c545;
+}
+
+.main .join .j-form {
+	width: 6.8rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0.01rem;
+	padding-bottom: 0.4rem;
+	background: #fff;
+	color: #363535;
+}
+
+.main .join .j-form .j-f-item {
+	margin-top: 0.2rem;
+}
+
+.main .join .j-form .label {
+	display: block;
+	width: 1.32rem;
+	height: 0.7rem;
+	padding-right: 0.08rem;
+	line-height: 0.7rem;
+	text-align: right;
+	font-size: 0.26rem;
+}
+
+.main .join .j-form input {
+	display: block;
+	height: 0.68rem;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	line-height: 0.7rem;
+	border: 0.01rem solid #d1d3d3;
+	font-size: 0.26rem;
+}
+
+.main .join .j-form .enterprise {
+	width: 4.83rem;
+}
+
+.main .join .j-form .select {
+	display: block;
+	width: 1.8rem;
+	height: 0.68rem;
+	padding-left: 0.2rem;
+	line-height: 0.7rem;
+	border: 0.01rem solid #d1d3d3;
+	font-size: 0.26rem;
+}
+
+.main .join .j-form .city {
+	margin-left: 0.34rem;
+}
+
+.main .join .j-form  .tip {
+	margin-left: 0.34rem;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	
+}
+
+.main .join .j-form  .contacts {
+	width: 1.6rem;
+	margin-right: 0.76rem;
+}
+
+.main .join .j-form .gender {
+	padding-left: 0.2rem;
+	padding-right: 0.3rem;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+}
+
+.main .join .j-form .phone-number {
+	width: 4.83rem;
+}
+
+.main .join .j-form .verification {
+	width: 2.1rem;
+	margin-right: 0.2rem;
+}
+
+.main .join .j-form .verification-btn {
+	width: 2.5rem;
+	font-size: 0.26rem;
+	color: #363535;
+	background: #d1d3d3;
+}
+
+.main .join .j-form .remark {
+	display: block;
+	width: 4.83rem;
+	height: 2.9rem;
+	padding: 0.2rem;
+	border: 0.01rem solid #d1d3d3;
+	font-size: 0.26rem;
+	color: #363535;
+}
+
+.main .join .j-form .submit {
+	width: 1.18rem;
+	border: 0.01rem solid #88c545;
+	font-size: 0.28rem;
+	color: #fff;
+	background: #88c545;
+}
+
+.main .join .j-form .cancle {
+	width: 1.18rem;
+	margin-left: 0.2rem;
+	font-size: 0.28rem;
+	color: #363535;
+	background: #eee;
+}
+
+#footer	.copyright {
+	width: 7.2rem;
+	height: 0.7rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	color: #ababab;
+	background: #eee;
+}
+
+.toolbar .backhome {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #fff;
+	background: #027a9b;
+}

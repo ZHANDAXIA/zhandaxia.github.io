@@ -1,0 +1,206 @@
+html,body,h1,h2,h3,h4,div,p{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	background: #eee;
+}
+
+.header {
+	position: relative;
+	width: 7.2rem;
+	padding: 0.25rem 0;
+	border-top: 0.01rem solid #d3d1d1;
+	border-bottom: 0.01rem solid #d3d1d1;
+	text-align: center;
+	background: #fff;
+}
+
+.header .logo {
+	display: block;
+	width: 2.25rem;
+	height: 0.46rem;
+	margin: 0 auto;
+	background: url(../images/logo.png) no-repeat;
+	background-size: cover;
+}
+
+.main .banner {
+	display: block;
+	width: 7.2rem;
+	height: 3.6rem;
+}
+
+.main .item-list {
+	width: 6.8rem;
+	margin-top: 0.2rem;
+	margin-left: 0.2rem;
+}
+
+.main .item .card-big {
+	width: 3.34rem;
+	height: 2.68rem;
+	padding-top: 0.66rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+}
+
+.main .item .card-big .icon-big {
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 auto 0.3rem;
+}
+
+.main .item .card-small {
+	width: 3.34rem;
+	height: 1.62rem;
+	line-height: 1.62rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+}
+
+.main .item .card-small .icon-small {
+	display: inline-block;
+	width: 0.74rem;
+	height: 0.74rem;
+	margin-right: 0.2rem;
+	vertical-align: middle;
+}
+
+.main .item .cloud {
+	background: #fdc200;
+}
+
+.main .item .icon-cloud {
+	background: url(../images/icon-product.png) no-repeat;
+	background-size: 1.2rem 7rem;
+}
+
+.main .item .wechat-platform {
+	margin-top: 0.1rem;
+	background: #54b0d6;
+}
+
+.main .item .icon-wechat-platform {
+	background: url(../images/icon-product.png) no-repeat;
+	background-position: 0 -1.22rem;
+	background-size: 1.2rem 7rem;
+}
+
+.main .item .discount-code {
+	margin-left: 0.12rem;
+	background: #627ac7;
+}
+
+.main .item .icon-discount-code {
+	background: url(../images/icon-product.png) no-repeat;
+	background-position: 0 -1.98rem;
+	background-size: 1.2rem 7rem;
+}
+
+.main .item .h5 {
+	margin-top: 0.1rem;
+	margin-left: 0.12rem;
+	background: #a6c863;
+}
+
+.main .item .icon-h5 {
+	background: url(../images/icon-product.png) no-repeat;
+	background-position: 0 -2.74rem;
+	background-size: 1.2rem 7rem;
+}
+
+.main .item .wechat-operation {
+	margin-top: 0.1rem;
+	background: #aed500;
+}
+
+.main .item .icon-wechat-operation {
+	background: url(../images/icon-product.png) no-repeat;
+	background-position: 0 -3.96rem;
+	background-size: 1.2rem 7rem;
+}
+
+.main .item .wechat-enterprise {
+	margin-top: 0.1rem;
+	margin-left: 0.12rem;
+	background: #eb925a;
+}
+
+.main .item .icon-wechat-enterprise {
+	background: url(../images/icon-product.png) no-repeat;
+	background-position: 0 -5.18rem;
+	background-size: 1.2rem 7rem;
+}
+
+.main .item .mobile-payment {
+	margin-top: 0.1rem;
+	margin-left: 0.12rem;
+	background: #fdc200;
+}
+
+.main .item .icon-mobile-payment {
+	background: url(../images/icon-product.png) no-repeat;
+	background-position: 0 -5.94rem;
+	background-size: 1.2rem 7rem;
+}
+
+
+
+
+#footer	.copyright {
+	width: 7.2rem;
+	height: 0.7rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	color: #ababab;
+	background: #eee;
+}
+
+.toolbar .backhome {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #fff;
+	background: #027a9b;
+}

@@ -1,0 +1,237 @@
+html,body,h1,h2,h3,h4,div {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	background: #eee;
+}
+
+.header {
+	position: relative;
+	width: 7.2rem;
+	padding: 0.25rem 0;
+	border-top: 0.01rem solid #d3d1d1;
+	border-bottom: 0.01rem solid #d3d1d1;
+	text-align: center;
+	background: #fff;
+}
+
+.header .logo {
+	display: block;
+	width: 2.25rem;
+	height: 0.46rem;
+	margin: 0 auto;
+	background: url(../images/logo.png) no-repeat;
+	background-size: cover;
+}
+
+.banner {
+	display: block;
+	width: 7.2rem;
+	height: 3.0rem;
+}
+
+.main {
+	width: 7.2rem;
+	padding-top: 0.2rem;
+}
+
+.main .title {
+	position: relative;
+	width: 6.6rem;
+	height: 0.54rem;
+	line-height: 0.54rem;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	background: #88c545;
+}
+
+.main .title:before {
+	position: absolute;
+	left: -0.01rem;
+	bottom: -0.2rem;
+	content: "";
+	display: block;
+	border-top: 0.1rem solid #56881f;
+	border-right: 0.1rem solid #56881f;
+	border-bottom: 0.1rem solid transparent;
+	border-left: 0.1rem solid transparent;
+}
+
+.main .title:after {
+	position: absolute;
+	right: -0.01rem;
+	bottom: -0.2rem;
+	content: "";
+	display: block;
+	border-top: 0.1rem solid #56881f;
+	border-right: 0.1rem solid transparent;
+	border-bottom: 0.1rem solid transparent;
+	border-left: 0.1rem solid #56881f;
+}
+
+.main .title .text {
+	font-size: 0.3rem;
+	color: #fff;
+}
+
+.main .title .down-btn {
+	margin-top: 0.2rem;
+	border-top: 0.16rem solid #fff;
+	border-right: 0.16rem solid transparent;
+	border-bottom: 0.16rem solid transparent;
+	border-left: 0.16rem solid transparent;
+}
+
+.main .content {
+	width: 6.8rem;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	padding-top: 0.27rem;
+	padding-bottom: 0.27rem;
+	border-left: 0.01rem solid #d3d1d1;
+	border-right: 0.01rem solid #d3d1d1;
+}
+
+.main .content .item {
+	position: relative;
+	width: 6rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	margin: 0.23rem auto;
+	background: #b1bfb9;
+	border-radius: 0.45rem;
+	text-align: center;
+	font-size: 0.32rem;
+	color: #fff;
+}
+
+.main .content .item .icon-item {
+	position: absolute;
+	left: 0.05rem;
+	top: 0.05rem;
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+}
+
+.main .content .item .icon-yun {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-erweima {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -0.8rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-weixin {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -1.6rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-yidongkaifa {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -2.4rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-yidongyunying {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -3.2rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-erweima {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -0.8rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-qiyehao {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -4rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .content .item .icon-yidongzhifu {
+	background: #fff url(../images/icon-aboutus.png) no-repeat;
+	background-position: 0 -4.8rem;
+	background-size: 0.9rem 6.6rem; 
+}
+
+.main .advantage .content {
+	padding-bottom: 0.24rem;
+	border-bottom:  0.01rem solid #d3d1d1;
+}
+
+.main .advantage .content .a-description {
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	text-indent: 0.48rem;
+	word-break: break-all;
+}
+
+#footer	.copyright {
+	width: 7.2rem;
+	height: 0.7rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	color: #ababab;
+	background: #eee;
+}
+
+.toolbar .backhome {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #fff;
+	background: #027a9b;
+}
