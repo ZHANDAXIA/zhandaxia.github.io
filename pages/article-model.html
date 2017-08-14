@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title>文章页模版</title>
+    <meta name="description" content="web前端博客,前端笔记">
+    <meta name="keywords" content="web前端,html,css,javascript,jquery,html5,css3">
+    <base target="_blank">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="../css/article-model.css">
+  </head>
+  <body>
+    <!-- 顶部导航开始 -->
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">MR.ZHAN</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	<li id="note-link" data-id="note">
+          	  <a href="#">笔记</a>
+          	</li>
+          	<li id="component-link" data-id="component">
+          	  <a href="#">插件</a>
+          	</li>
+            <li id="cases-link" data-id="cases">
+              <a href="#">案例</a>
+            </li>
+          	<li id="life-link" data-id="life">
+          	  <a href="#">生活</a>
+          	</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部导航结束 -->
+    <!-- 顶部大图开始 -->
+    <div class="banner">
+      <img class="img-responsive" src="../images/article.jpg" width="1920px" height="450px" alt="First slide">
+      <h1 class="title">我是主标题</h1>
+      </div>
+    </div>
+    <!-- 顶部大图结束 -->
+    <!-- 文章部分开始 -->
+    <div class="article">
+      <div class="container">
+        <h2>我是副标题</h1>
+        <p>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落</p>
+        <p>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落<span class="highlight">我是高亮显示的</span>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落</p>
+        <h2>我是副标题</h1>
+        <blockquote>
+          <p class="blockquote">我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落<span class="highlight">我也是高亮显示的</span>我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落</p>
+        </blockquote>
+        <h2>我是副标题</h1>
+        <p>我是一段代码</p>
+        <pre>I'm some kind of code I'm some kind of code
+          <span class="highlight">I'm some kind of code</span>
+          I'm some kind of code
+          I'm some kind of code</pre>
+        <h2>我是副标题</h1>
+        <p>我是一张占位图片</p>
+        <img src="../images/500x200.png" width="500" height="200" alt="占位图片">
+        <h2>我是副标题</h1>
+        <p>我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落</p>
+      </div>
+    </div>
+    <!-- 文章部分结束 -->
+    <!-- 页脚开始 -->
+    <div class="footer">
+      <p class="wechat text-center">
+        <span class="qrcode-s"></span>
+        <span class="qrcode-l"></span>
+      </p>
+      <p class="copyright text-center">Copyright &copy ZHANDAXIA</p>
+    </div>
+    <!-- 页脚结束 -->
+    <!-- 返回顶部开始 -->
+    <div class="back-top">
+      <img src="../images/top.png" width="24px" height="16px" alt="返回顶部">
+    </div>
+    <!-- 返回顶部结束 -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/collapse.js"> 
+    </script>
+  </body>
+</html>

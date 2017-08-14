@@ -1,0 +1,153 @@
+html,body,h1,h2,h3,h4,div,p{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	background: #eee;
+}
+
+.header {
+	position: relative;
+	width: 7.2rem;
+	padding: 0.25rem 0;
+	border-top: 0.01rem solid #d3d1d1;
+	border-bottom: 0.01rem solid #d3d1d1;
+	text-align: center;
+	background: #fff;
+}
+
+.header .logo {
+	display: block;
+	width: 2.25rem;
+	height: 0.46rem;
+	margin: 0 auto;
+	background: url(../images/logo.png) no-repeat;
+	background-size: cover;
+}
+
+.main .banner {
+	display: block;
+	width: 7.2rem;
+	height: 3.6rem;
+}
+
+.main .item-list {
+	width: 6.8rem;
+	margin-top: 0.2rem;
+	margin-left: 0.2rem;
+}
+
+.main .item .card-big {
+	width: 3.34rem;
+	height: 2.68rem;
+	padding-top: 0.66rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+}
+
+.main .item .card-big .icon-big {
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 auto 0.3rem;
+}
+
+.main .item .store {
+	margin-right: 0.12rem;
+	margin-bottom: 0.1rem;
+	background: #fd7c76;
+}
+
+.main .item .icon-store {
+	background: url(../images/icon-programme.png) no-repeat;
+	background-size: 1.2rem 5rem;
+}
+
+.main .item .distribution {
+	margin-bottom: 0.1rem;
+	background: #ec9d40;
+}
+
+.main .item .icon-distribution {
+	background: url(../images/icon-programme.png) no-repeat;
+	background-position: 0 -1.22rem;
+	background-size: 1.2rem 5rem;
+}
+
+.main .item .transformation {
+	margin-right: 0.12rem;
+	background: #f0bb8f;
+}
+
+.main .item .icon-transformation {
+	background: url(../images/icon-programme.png) no-repeat;
+	background-position: 0 -2.44rem;
+	background-size: 1.2rem 5rem;
+}
+
+.main .item .customization {
+	background: #68afa9;
+}
+
+.main .item .icon-customization {
+	background: url(../images/icon-programme.png) no-repeat;
+	background-position: 0 -3.66rem;
+	background-size: 1.2rem 5rem;
+}
+
+
+
+#footer	.copyright {
+	width: 7.2rem;
+	height: 0.7rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	color: #ababab;
+	background: #eee;
+}
+
+.toolbar .backhome {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #fff;
+	background: #027a9b;
+}

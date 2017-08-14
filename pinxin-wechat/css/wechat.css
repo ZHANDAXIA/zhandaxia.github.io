@@ -1,0 +1,262 @@
+html,body,h1,h2,h3,h4,div,form,input,select,textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+input,select,textarea {
+	outline: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	background: #eee;
+}
+
+.header {
+	position: relative;
+	width: 7.2rem;
+	padding: 0.25rem 0;
+	border-top: 0.01rem solid #d3d1d1;
+	border-bottom: 0.01rem solid #d3d1d1;
+	text-align: center;
+	background: #fff;
+}
+
+.header .logo {
+	display: block;
+	width: 2.25rem;
+	height: 0.46rem;
+	margin: 0 auto;
+	background: url(../images/logo.png) no-repeat;
+	background-size: cover;
+}
+
+.main .banner {
+	display: block;
+	width: 7.2rem;
+	height: 3.0rem;
+}
+
+.main .introduce {
+	width: 6.78rem;
+	margin-top: 0.2rem;
+	margin-left: 0.2rem;
+	background: #fff;
+	border: 0.01rem solid #d3d1d1;
+}
+
+.main .introduce .item {
+	border-bottom: 0.01rem dashed #d1d3d3;
+}
+
+.main .introduce .item .image {
+
+}
+
+.main .introduce .item .image img{
+	display: block;
+	width: 2.7rem;
+	height: 4.4rem;
+	margin-bottom: 0.2rem;
+}
+
+.main .introduce .item .text{
+	width: 3.8rem;
+	margin-left: 0.26rem;
+}
+
+.main .introduce .item .title {
+	margin-top: 0.7rem;
+	margin-bottom: 0.08rem;
+	font-size: 0.3rem;
+	color: #88c545;
+	word-break: break-all;
+}
+
+.main .introduce .item .sub {
+	font-size: 0.22rem;
+	color: #ababab;
+	word-break: break-all;
+}
+
+.main .introduce .item .content {
+	margin-top: 0.2rem;
+	line-height: 0.4rem;
+	font-size: 0.26rem;
+	color: #ababab;
+	word-break: break-all;
+}
+
+.main .introduce .service-list {
+	margin-bottom: 0.3rem;
+}
+
+.main .introduce .service-item {
+	position: relative;
+	width: 1.04rem;
+	height: 1.04rem;
+	margin-left: 0.08rem;
+	background: #f2f2f2;
+	text-align: center;
+}
+
+.main .introduce .service-item .service-text {
+	margin-top: 0.6rem;
+	font-size: 0.2rem;
+	color: #363635;
+}
+
+.main .introduce .service-item .icon-card {
+	position: absolute;
+	top: 0.26rem;
+	left: 0.34rem;
+	display: block;
+	width: 0.34rem;
+	height: 0.26rem;
+	background: url(../images/icon-wechat.png) no-repeat;
+	background-size: 0.4rem 2rem;
+}
+
+.main .introduce .service-item .icon-net {
+	position: absolute;
+	top: 0.24rem;
+	left: 0.35rem;
+	display: block;
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url(../images/icon-wechat.png) no-repeat;
+	background-position: 0 -0.28rem;
+	background-size: 0.4rem 2rem;
+}
+
+.main .introduce .service-item .icon-group {
+	position: absolute;
+	top: 0.24rem;
+	left: 0.35rem;
+	display: block;
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url(../images/icon-wechat.png) no-repeat;
+	background-position: 0 -0.62rem;
+	background-size: 0.4rem 2rem;
+}
+
+.main .introduce .service-item .icon-pay {
+	position: absolute;
+	top: 0.24rem;
+	left: 0.37rem;
+	display: block;
+	width: 0.31rem;
+	height: 0.31rem;
+	background: url(../images/icon-wechat.png) no-repeat;
+	background-position: 0 -0.96rem;
+	background-size: 0.4rem 2rem;
+}
+
+.main .introduce .service-item .icon-reserve {
+	position: absolute;
+	top: 0.22rem;
+	left: 0.38rem;
+	display: block;
+	width: 0.3rem;
+	height: 0.33rem;
+	background: url(../images/icon-wechat.png) no-repeat;
+	background-position: 0 -1.29rem;
+	background-size: 0.4rem 2rem;
+}
+
+.main .introduce .service-item .icon-customer-service {
+	position: absolute;
+	top: 0.26rem;
+	left: 0.33rem;
+	display: block;
+	width: 0.4rem;
+	height: 0.26rem;
+	background: url(../images/icon-wechat.png) no-repeat;
+	background-position: 0 -1.64rem;
+	background-size: 0.4rem 2rem;
+}
+
+.main .introduce .item3 .title {
+	width: 6.78rem;
+	height: 0.52rem;
+	margin-top: 0.3rem;
+	line-height: 0.52rem;
+	font-size: 0.3rem;
+	color: #fff;
+	background: #88c545;
+	border-top: 1px solid #d3d1d1;
+	border-bottom: 1px solid #d3d1d1;
+}
+
+.main .introduce .item3 .content {
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+	margin-top: 0.1rem;
+	line-height: 0.4rem;
+	font-size: 0.26rem;
+	color: #ababab;
+}
+
+.main .introduce .item3 .image {
+	display: block;
+	width: 5rem;
+	height: 2.6rem;
+	margin: 0.1rem auto 0.3rem;
+}
+
+#footer	.copyright {
+	width: 7.2rem;
+	height: 0.7rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	color: #ababab;
+	background: #eee;
+}
+
+.toolbar .backhome {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 7.2rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.34rem;
+	color: #fff;
+	background: #027a9b;
+}
