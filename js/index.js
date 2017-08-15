@@ -23,7 +23,7 @@ $(function() {
       });
       //点击按钮返回顶部
       backButton.on("click",function() {
-        $("html").animate({scrollTop:0},500);
+        $("html,body").animate({scrollTop:0},500);
       });	
 	})();
 
