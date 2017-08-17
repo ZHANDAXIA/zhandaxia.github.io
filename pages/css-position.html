@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title>position定位详解</title>
+    <meta name="description" content="web前端博客,前端笔记">
+    <meta name="keywords" content="web前端,html,css,javascript,jquery,html5,css3">
+    <base target="_blank">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/article-model.css">
+    <link rel="stylesheet" href="../css/css-position.css">
+  </head>
+  <body>
+    <!-- 顶部导航开始 -->
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">MR.ZHAN</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	<li id="note-link" data-id="note">
+          	  <a href="#">笔记</a>
+          	</li>
+          	<li id="component-link" data-id="component">
+          	  <a href="#">插件</a>
+          	</li>
+            <li id="cases-link" data-id="cases">
+              <a href="#">案例</a>
+            </li>
+          	<li id="life-link" data-id="life">
+          	  <a href="#">生活</a>
+          	</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部导航结束 -->
+    <!-- 顶部大图开始 -->
+    <div class="banner">
+      <img class="img-responsive" src="../images/article.jpg" width="1920px" height="300px" alt="First slide">
+      <h1 class="title">position定位详解和应用</h1>
+      </div>
+    </div>
+    <!-- 顶部大图结束 -->
+    <!-- 文章部分开始 -->
+    <div class="article">
+      <div class="container">
+        <h2>position定义</h2>
+        <p>position属性定义元素的定位类型,配合top/right/bottom/left值确定元素的位置.所有主流浏览器都支持 position 属性</p>
+        <h2>position定位类型</h2>
+        <!-- static -->
+        <p>position默认值:<span class="highlight">static</span>. static定位表示出现在正常的文档流中.如不需定位就不要设置.</p>
+        <!-- relative -->
+        <p>position常用属性1:<span class="highlight">relative</span>. relative表示相对定位,相对于它本身正常显示时的文档流位置.如设置相对定位会脱离文档流,但是原文档流位置会保留.</p>
+        <!-- absolute -->
+        <p>position常用属性2:<span class="highlight">absolute</span>. absolute表示绝对定位,相对于离它最近的有position:relative或position:absolute属性的祖先元素定位.如设置绝对定位会脱离文档流,其原文档流位置消失.</p>
+        <!-- fixed -->
+        <p>position常用属性3:<span class="highlight">fixed</span>. fixed表示固定定位,相对于浏览器窗口定位.如设置固定定位会脱离文档流,其原文档流位置消失.常见的为侧栏工具,如:返回顶部按钮,联系客服等.</p>
+        <!-- 实例 -->
+        <h2>示例</h2>
+        <p>html代码:</p>
+        <pre>
+&lt;div class="div1"&gt;
+  div1
+  &lt;div class="div2"&gt;
+    div2
+    &lt;div class="div3"&gt;
+      div3
+      &lt;div class="div4"&gt;div4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="div5"&gt;div5&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="div6"&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;div6&lt;/div&gt;
+  &lt;div class="div7"&gt;div7&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <p>css代码</p>
+        <pre>
+.div1 {position: <span class="highlight">relative</span>; width: 500px; height: 350px; border: 2px solid #ccc; background: #eee;}
+.div2 {position: <span class="highlight">relative</span>; top: 20px; left: 20px; width: 200px; height: 100px; background: #9b59c4;}
+.div3 {position: <span class="highlight">absolute</span>; top: 20px; left: 20px; width: 200px; height: 100px; background: #c4c059;}
+.div4 {position: <span class="highlight">absolute</span>; top: 20px; left: 20px; width: 200px; height: 100px; background: #921919;}
+.div5 {position: <span class="highlight">fixed</span>; top: 500px; right:100px; width: 100px; height: 100px; background: #66c459;}
+.div6 {top: 20px; left: 20px; width: 200px;height: 100px;background: #5966c4;}
+.div7 {top: 20px; left: 20px; width: 200px;height: 100px;background: #59c4bb;}</pre>
+        <p>示例:</p>
+        <div class="div1">
+          div1 relative
+          <div class="div2">
+            div2 relative
+            <div class="div3">
+            div3 absolute
+              <div class="div4">div4 absolute</div>
+            </div>
+            <div class="div5">div5 fixed</div>
+          </div>
+          <div class="div6"><br><br><br>div6 static</div>
+          <div class="div7">div7 static</div>
+        </div>
+        <h2>示例解析:</h2>
+        <p>在分析定位类型之前先弄明白一个概念,什么叫<span class="highlight">脱离文档流</span>?我的理解是: 在photoshop里有<span class="highlight">图层</span>的概念,文档流相当于一个标准图层,元素脱离文档流后相当于新建了一个图层,此元素为这个图层中唯一的内容.在photoshop中可以管理图层的上下顺序,在css中同样可以通过设置<span class="highlight">z-index</span>属性来管理脱离文档流后的元素的图层顺序.另外除了给元素设置定位类型之外,float浮动也会使元素脱离文档流.</p>
+        <p>div2定位类型为相对定位,相对于div2文档流中的位置定位,其原文档流位置应在文字div1的下方,通过设置top:20px离原位置上方20px,设置left:20px离原位置左边20px,但是其原文档流位置得以保留,所以div6会在div2文档流位置后边.</p>
+        <p>div3定位类型为绝对定位,相对于离它最近的设置relative相对定位或absolute绝对定位的祖先元素进行定位,根据示例div1和div2都设置了相对定位,但是div2距离div3最近,所以div2相对于div3定位,定位后脱离文档流,原文档流位置也消失.</p>
+        <p>div4定位类型也是绝对定位,离它最近的设置relative相对定位或absolute绝对定位的元素是div3,所以div4根据div3定位.</p>
+        <p>div5定位类型为固定定位,它是相对于浏览器窗口进行定位的,不管页面内容如何滚动,设置了固定定位的元素都不会动.固定定位的元素也会脱离文档流.</p>
+        <p>div6和div7没有设置定位类型,所以其定位类型为默认值static,元素正常显示在文档流中,此时设置top/right/bottom/left等位置信息并不会起作用.</p>
+      </div>
+    </div>
+    <!-- 文章部分结束 -->
+    <!-- 页脚开始 -->
+    <div class="footer">
+      <p class="wechat text-center">
+        <span class="qrcode-s"></span>
+        <span class="qrcode-l"></span>
+      </p>
+      <p class="copyright text-center">Copyright &copy ZHANDAXIA</p>
+    </div>
+    <!-- 页脚结束 -->
+    <!-- 返回顶部开始 -->
+    <div class="back-top">
+      <img src="../images/top.png" width="24px" height="16px" alt="返回顶部">
+    </div>
+    <!-- 返回顶部结束 -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/article-model.js"></script>
+  </body>
+</html>

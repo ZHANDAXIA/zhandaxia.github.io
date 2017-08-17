@@ -1,3 +1,23 @@
+"use strict";
+$(function() {
+
+// 滚动回顶部按钮
+	(function() {
+		var backButton = $(".back-top");
+      //根据滚动距离是否大于窗口高度来显示和隐藏按钮
+      $(window).on("scroll",function() {
+        if($(window).scrollTop() > $(window).height()){
+          backButton.fadeIn();
+        }else{
+          backButton.fadeOut();
+        }
+      });
+      //点击按钮返回顶部
+      backButton.on("click",function() {
+        $("html,body").animate({scrollTop:0},500);
+      });	
+	})();
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -227,3 +247,5 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+	
+});

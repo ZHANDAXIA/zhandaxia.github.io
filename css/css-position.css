@@ -1,0 +1,53 @@
+.div1 {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  border: 2px solid #ccc;
+  background: #eee;
+}
+.div2 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+  background: #9b59c4;
+}
+.div3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+  background: #c4c059;
+}
+.div4 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+  background: #921919;
+}
+.div5 {
+  position: fixed;
+  top: 500px;
+  right:100px;
+  width: 100px;
+  height: 100px;
+  background: #66c459;
+}
+.div6 {
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+  background: #5966c4;
+}
+.div7 {
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+  background: #59c4bb;
+}
