@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title>js中的数据类型</title>
+    <meta name="description" content="web前端博客,前端笔记">
+    <meta name="keywords" content="web前端,html,css,javascript,jquery,html5,css3">
+    <base target="_blank">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/article-model.css">
+    <link rel="stylesheet" href="../css/js-datatype.css">
+  </head>
+  <body>
+    <!-- 顶部导航开始 -->
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">MR.ZHAN</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	<li id="note-link" data-id="note">
+          	  <a href="#">笔记</a>
+          	</li>
+          	<li id="component-link" data-id="component">
+          	  <a href="#">插件</a>
+          	</li>
+            <li id="cases-link" data-id="cases">
+              <a href="#">案例</a>
+            </li>
+          	<li id="life-link" data-id="life">
+          	  <a href="#">生活</a>
+          	</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部导航结束 -->
+    <!-- 顶部大图开始 -->
+    <div class="banner">
+      <img class="img-responsive" src="../images/article.jpg" width="1920px" height="300px" alt="First slide">
+      <h1 class="title">JavaScript中的数据类型</h1>
+      </div>
+    </div>
+    <!-- 顶部大图结束 -->
+    <!-- 文章部分开始 -->
+    <div class="article">
+      <div class="container">
+        <h2>数据类型分类</h1>
+        <p>js中的数据类型分为两大类,一种称为<span class="highlight">简单数据类型</span>,另一种称为<span class="highlight">复杂数据类型</span>.</p>
+        <p>简单数据类型也叫基本数据类型,其数据内容是固定的,存储在<span class="highlight">栈</span>中,可以<span class="highlight">直接</span>按值访问.</p>
+        <p>复杂数据类型页脚引用数据类型,其数据内容是会改变的,把数据存储在<span class="highlight">堆</span>中,把数据的<span class="highlight">指针(链接)</span>存储在栈中.</p>
+        <p>对于栈和堆的理解: 栈就相当于电脑中的内存条,堆相当于电脑中的硬盘.内存条(栈)的读取速度快但是容量小,只能存储一些简单数据,而硬盘(堆)的容量大,把复杂数据都存储在内,在内存条(栈)中创建一个快捷方式(指针)指向硬盘(堆)中的复杂数据.</p>
+        <h2>基本数据类型</h1>
+        <p>基本数据类型: String(字符串) / Number(数字) / Boolean(布尔) / Undefined(未定义) / Null(空).</p>
+        <p><span class="highlight">String(字符串)</span>必须用''或""包起来,可以使用单引号,也可以使用双引号,但是要保持一致不要混用.如果字符串中包含引号的时候,表示字符串的引号和字符串中的引号不能相同,如:var nick ='He is called "Tank".'或var nick ="He is called 'Tank'."</p>
+        <p><span class="highlight">Number(数字)</span>可以是整数或浮点数值，除此之外，Number 还有一个特殊的数值，即NaN (Not a Number)，NaN表示一个承诺返回数值类型数据但实际没有返回的情况。NaN有两个特点：一是任何涉及NaN的操作都会返回NaN，二是NaN不与任何数值相等，包括自己，但可以通过 isNaN() 方法来判断一个数值是否为 NaN .</p>
+        <pre>
+typeof 123; //"number"
+typeof 123.123; //"number"
+typeof NaN; //"number"
+NaN + 1; // NaN
+NaN === NaN; //false
+NaN === false; ///false
+isNaN(NaN + 1); //true</pre>
+        <p><span class="highlight">Boolean(布尔)</span>只有两个值:true或false.js中所有类型的值都可以转化成布尔值. 0 / NaN / "" / null / undefined都返回false,除此之外全部返回true.</p>
+        <pre>
+typeof true; //"boolean"
+typeof false; //"boolean"
+Boolean(0); //false
+Boolean(NaN); //false
+Boolean(""); //false
+Boolean(null); //false
+Boolean(undefined); //false
+Boolean(1); //true
+Boolean("a"); //true
+Boolean(new Function()); //true</pre>
+        <p><span class="highlight">Undefined(未定义)</span>和<span class="highlight">Null(空)</span>是两种不同的数据类型.undefined表示缺少值,就没有这个东西;而null表示值为空,是有这个东西的.</p>
+        <pre>
+Number(undefined); //NaN
+Number(null); //0</pre>
+        <h2>复杂数据类型</h2>
+        <p>复杂数据类型: Object(对象),包括 Array(数组) / Function(函数) / Data(日期)等.</p>
+        <p>Object(对象)是属性和方法的集合,以键值对的形式存在,键和值以:(冒号)连接,属性和属性之间以,(逗号)分隔.js在解析的时候会把其中的键先转换成字符串再去读取对应的值.</p>
+        <p>因为复杂类型的数据是存储在堆中,把指针存储在栈中,所以变量之间的相互赋值实际上操作的是指针,而非数据本身.</p>
+        <pre>
+var a = {x:1,y:2}; // var a = {'x':1,'y':2};
+var b = a;</pre>
+        <p>创建一个对象,通过变量a把指针存储在栈中,链接到堆中的对象(解析是会把键名x转换成'x').将变量a赋值给变量b只是把指针赋值给了变量b,并没有在堆中创建一个新对象.</p>
+
+
+      </div>
+    </div>
+    <!-- 文章部分结束 -->
+    <!-- 页脚开始 -->
+    <div class="footer">
+      <p class="wechat text-center">
+        <span class="qrcode-s"></span>
+        <span class="qrcode-l"></span>
+      </p>
+      <p class="copyright text-center">Copyright &copy ZHANDAXIA</p>
+    </div>
+    <!-- 页脚结束 -->
+    <!-- 返回顶部开始 -->
+    <div class="back-top">
+      <img src="../images/top.png" width="24px" height="16px" alt="返回顶部">
+    </div>
+    <!-- 返回顶部结束 -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/article-model.js"></script>
+  </body>
+</html>
