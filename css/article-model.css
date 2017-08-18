@@ -369,6 +369,8 @@ a:hover {
   font-size: 14px;
   background: #eee;
   border: 1px solid #ccc;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 .article .blockquote {
   font-size: 15px;
