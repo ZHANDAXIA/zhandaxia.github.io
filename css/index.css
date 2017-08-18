@@ -6,6 +6,19 @@
 	background: #fff;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+	.col-md-6 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.col-lg-4 {
+		width: 33.333333%;
+	}
+}
+
+
 .slide {
 	margin-top: 50px;
 }
@@ -76,8 +89,9 @@
 	margin-bottom: 38px;
 	line-height: 24px;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	word-break: break-all;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
 }
 
 .img-responsive {

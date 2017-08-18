@@ -1,0 +1,78 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrap{
+  position: relative;
+  width: 790px;
+  height: 340px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrap .slide-show li{
+  position: absolute;
+}
+
+.wrap .btn{
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 790px;
+}
+
+.wrap .control-btn{
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  display: none;
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,.1);
+}
+
+.wrap:hover .control-btn{
+  display: block;
+}
+
+.wrap .control-btn-l{
+  left: 0;
+}
+
+.wrap .control-btn-r{
+  right: 0;
+}
+
+.wrap .control-btn:hover{
+  background: rgba(0,0,0,.5);
+}
+
+.wrap .btn-list{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 186px;
+  height: 20px;
+  margin-left: -91px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.3);
+}
+
+.wrap .btn-list li{
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #fff;
+  margin-top: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.wrap .btn-list li.on{
+  background: #f10215;
+}

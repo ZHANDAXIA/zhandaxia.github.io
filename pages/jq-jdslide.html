@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=0">
-    <title>文章页模版</title>
+    <title>京东首页轮播</title>
     <meta name="description" content="web前端博客,前端笔记">
     <meta name="keywords" content="web前端,html,css,javascript,jquery,html5,css3">
     <base target="_blank">
     <link rel="icon" href="../images/icon.png">
     <link rel="stylesheet" href="../css/article-model.css">
+    <link rel="stylesheet" href="../css/jq-jdslide.css">
   </head>
   <body>
     <!-- 顶部导航开始 -->
@@ -45,31 +46,283 @@
     <!-- 顶部大图开始 -->
     <div class="banner">
       <img class="img-responsive" src="../images/article.jpg" width="1920px" height="300px" alt="First slide">
-      <h1 class="title">我是主标题</h1>
+      <h1 class="title">jquery实现京东首页轮播图</h1>
       </div>
     </div>
     <!-- 顶部大图结束 -->
     <!-- 文章部分开始 -->
     <div class="article">
       <div class="container">
-        <h2>我是副标题</h1>
-        <p>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落</p>
-        <p>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落<span class="highlight">我是高亮显示的</span>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落</p>
-        <h2>我是副标题</h1>
-        <blockquote>
-          <p class="blockquote">我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落<span class="highlight">我也是高亮显示的</span>我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落</p>
-        </blockquote>
-        <h2>我是副标题</h1>
-        <p>我是一段代码</p>
-        <pre>I'm some kind of code I'm some kind of code
-          <span class="highlight">I'm some kind of code</span>
-          I'm some kind of code
-          I'm some kind of code</pre>
-        <h2>我是副标题</h1>
-        <p>我是一张占位图片</p>
-        <img src="../images/500x200.png" width="500" height="200" alt="占位图片">
-        <h2>我是副标题</h1>
-        <p>我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落</p>
+        <!-- 轮播图示例 -->
+        <div class="wrap">
+          <ul class="slide-show">
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner1.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner2.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner3.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner4.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner5.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner6.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner7.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src="../JD-Homepage/image/banner8.jpg" alt="" width="790" height="340">
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="control-btn control-btn-l">
+            <span class="iconfont icon-houdongfangiconfont23"><</span>
+          </a>
+          <a href="#" class="control-btn control-btn-r">
+            <span class="iconfont icon-you">></span>
+          </a>
+          <ul class="btn-list">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <p>html:</p>
+        <pre>
+&lt;div class="wrap"&gt;
+  &lt;!-- 图片列表 --&gt;
+  &lt;ul class="slide-show"&gt;
+    &lt;li class="page1"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner1.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page2"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner2.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page3"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner3.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page4"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner4.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page5"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner5.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page6"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner6.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page7"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner7.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="page8"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="image/banner8.jpg" alt="" width="790" height="340"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;!-- 控制按钮 --&gt;
+  &lt;a href="#" class="control-btn control-btn-l"&gt;
+    &lt;i class="iconfont icon-houdongfangiconfont23"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;a href="#" class="control-btn control-btn-r"&gt;
+    &lt;i class="iconfont icon-you"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;!-- 小圆点列表 --&gt;
+  &lt;ul class="btn-list"&gt;
+    &lt;li class="on"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+        <p>css:</p>
+        <pre>
+.wrap{
+  position: relative;
+  width: 790px;
+  height: 340px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrap .slide-show li{
+  position: absolute;
+}
+
+.wrap .btn{
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 790px;
+}
+
+.wrap .control-btn{
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  display: none;
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,.1);
+}
+
+.wrap:hover .control-btn{
+  display: block;
+}
+
+.wrap .control-btn-l{
+  left: 0;
+}
+
+.wrap .control-btn-r{
+  right: 0;
+}
+
+.wrap .control-btn:hover{
+  background: rgba(0,0,0,.5);
+}
+
+.wrap .btn-list{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 186px;
+  height: 20px;
+  margin-left: -91px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.3);
+}
+
+.wrap .btn-list li{
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #fff;
+  margin-top: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.wrap .btn-list li.on{
+  background: #f10215;
+}</pre>
+        <p>js:</p>
+        <pre>
+//banner轮播图
+(function(){
+  var index = 0,
+      //获取圆点按钮组
+      btnList = $('.btn-list li'),
+      //获取轮播图片
+      slideShow = $('.slide-show li'),
+      length = slideShow.length,
+      autoPlay;
+  //封装切换圆点按钮和轮播图
+  function change(){
+    //给索引值对应的圆点按钮添加css类'on',并给它兄弟元素清除css类'on'
+    btnList.eq(index).addClass('on').siblings().removeClass('on');
+    //给索引值对应的轮播图再淡入,并让它兄弟元素淡出
+    slideShow.eq(index).stop().fadeIn().siblings().stop().fadeOut();
+  }
+
+  change();
+
+  //给圆点按钮绑定鼠标hover切换按钮和轮播图事件
+  btnList.on("mouseover",function(){
+    index = $(this).index();//获取hover圆点按钮的索引值
+    change();//切换到索引值对应的圆点按钮和轮播图
+  });
+  
+  //给向左控制按钮绑定点击切换按钮和轮播图事件
+  $('.wrap .control-btn-l').on("click",function(e){
+    //组织a标签的默认行为
+    e.preventDefault();
+    index --;
+    //索引值小于0(最前的轮播图和圆点)让索引值回到最后
+    if(index < 0){index = length - 1};
+    //切换到索引值对应的圆点按钮和轮播图
+    change();
+  });
+
+  //给向右控制按钮绑定点击切换按钮和轮播图事件
+  $('.wrap .control-btn-r').on("click",function(e){
+    e.preventDefault();
+    index ++;
+    //索引值大于7(最后的轮播图和圆点)让索引值回到0
+    if(index > length - 1){index = 0};
+    //切换到索引值对应的圆点按钮和轮播图
+    change();
+  });
+  
+  //封装轮播
+  function play(){
+    index ++;
+    //索引值超过7(最后的轮播图和圆点)让索引值回到0
+    index %= length;
+    //切换到索引值对应的圆点按钮和轮播图
+    change();
+  }
+
+  //设置定时器自动切换圆点按钮和轮播图
+  autoPlay = setInterval(play,3000);
+
+  //设置鼠标移入停止自动轮播
+  slideShow.on("mouseover",function(){
+    clearInterval(autoPlay);
+  });
+  //设置鼠标移出继续自动轮播
+  slideShow.on("mouseout",function(){
+    autoPlay = setInterval(play,3000);
+  });
+})();</pre>
       </div>
     </div>
     <!-- 文章部分结束 -->
@@ -89,5 +342,6 @@
     <!-- 返回顶部结束 -->
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/article-model.js"></script>
+    <script src="../js/jq-jdslide.js"></script>
   </body>
 </html>
