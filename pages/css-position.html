@@ -105,7 +105,7 @@
           <div class="div7">div7 static</div>
         </div>
         <h2>示例解析:</h2>
-        <p>在分析定位类型之前先弄明白一个概念,什么叫<span class="highlight">脱离文档流</span>?我的理解是: 在photoshop里有<span class="highlight">图层</span>的概念,文档流相当于一个标准图层,元素脱离文档流后相当于新建了一个图层,此元素为这个图层中唯一的内容.在photoshop中可以管理图层的上下顺序,在css中同样可以通过设置<span class="highlight">z-index</span>属性来管理脱离文档流后的元素的图层顺序.另外除了给元素设置定位类型之外,float浮动也会使元素脱离文档流.</p>
+        <p>在分析定位类型之前先弄明白一个概念,什么叫<span class="highlight">脱离文档流</span>?对文档流的理解: 在photoshop里有<span class="highlight">图层</span>的概念,文档流相当于一个标准图层,元素脱离文档流后相当于新建了一个图层,此元素为这个图层中唯一的内容.在photoshop中可以管理图层的上下顺序,在css中同样可以通过设置<span class="highlight">z-index</span>属性来管理脱离文档流后的元素的图层顺序.另外除了给元素设置定位类型之外,float浮动也会使元素脱离文档流.</p>
         <p>div2定位类型为相对定位,相对于div2文档流中的位置定位,其原文档流位置应在文字div1的下方,通过设置top:20px离原位置上方20px,设置left:20px离原位置左边20px,但是其原文档流位置得以保留,所以div6会在div2文档流位置后边.</p>
         <p>div3定位类型为绝对定位,相对于离它最近的设置relative相对定位或absolute绝对定位的祖先元素进行定位,根据示例div1和div2都设置了相对定位,但是div2距离div3最近,所以div2相对于div3定位,定位后脱离文档流,原文档流位置也消失.</p>
         <p>div4定位类型也是绝对定位,离它最近的设置relative相对定位或absolute绝对定位的元素是div3,所以div4根据div3定位.</p>

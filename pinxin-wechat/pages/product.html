@@ -6,9 +6,13 @@
 	<title>品信互动微官网</title>
 	<link rel="stylesheet" href="../css/product.css">
 	<script type="text/javascript">
-		var html = document.documentElement,
-			width = html.clientWidth;
-		html.style.fontSize = width / 7.2 + 'px';
+		function setRem() {
+			var html = document.documentElement,
+				width = html.clientWidth;
+			html.style.fontSize = width / 7.2 + 'px';
+		}
+		setRem();
+		window.onresize = setRem;
 	</script>
 </head>
 <body>

@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=0">
-    <title>文章页模版</title>
+    <title>文字超出省略号显示</title>
     <meta name="description" content="web前端博客,前端笔记">
     <meta name="keywords" content="web前端,html,css,javascript,jquery,html5,css3">
     <base target="_blank">
     <link rel="icon" href="../images/icon.png">
     <link rel="stylesheet" href="../css/article-model.css">
+    <link rel="stylesheet" href="../css/css-textflow.css">
   </head>
   <body>
     <!-- 顶部导航开始 -->
@@ -45,31 +46,104 @@
     <!-- 顶部大图开始 -->
     <div class="banner">
       <img class="img-responsive" src="../images/article.jpg" width="1920px" height="300px" alt="First slide">
-      <h1 class="title">我是主标题</h1>
+      <h1 class="title">文字超出省略号(...)显示</h1>
       </div>
     </div>
     <!-- 顶部大图结束 -->
     <!-- 文章部分开始 -->
     <div class="article">
       <div class="container">
-        <h2>我是副标题</h1>
-        <p>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落</p>
-        <p>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落<span class="highlight">我是高亮显示的</span>我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落我是一个段落</p>
-        <h2>我是副标题</h1>
-        <blockquote>
-          <p class="blockquote">我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落<span class="highlight">我也是高亮显示的</span>我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落我是一个引用段落</p>
-        </blockquote>
-        <h2>我是副标题</h1>
-        <p>我是一段代码</p>
-        <pre>I'm some kind of code I'm some kind of code
-          <span class="highlight">I'm some kind of code</span>
-          I'm some kind of code
-          I'm some kind of code</pre>
-        <h2>我是副标题</h1>
-        <p>我是一张占位图片</p>
-        <img src="../images/500x200.png" width="500" height="200" alt="占位图片">
-        <h2>我是副标题</h1>
-        <p>我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落我是另外一个段落</p>
+        <!-- 单行文本实现方式 -->
+        <h2>单行文本实现方式</h1>
+        <p>html:</p>
+        <pre>
+&lt;div class="wrap"&gt;
+  &lt;p class="text"&gt;我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,&lt;/p&gt;
+&lt;/div&gt;</pre>
+        <p>css:</p>
+        <pre>
+.test1 {
+  width: 80%; //指定容器宽度
+  margin: 10px auto; //居中显示
+}
+
+.test1 .text {
+  overflow: hidden; //超出部分隐藏
+  white-space: nowrap; //强制不换行
+  text-overflow: ellipsis; //文字超出用省略号显示
+  border: 1px solid #ccc; //设置边框更容易看清边界
+  border-radius: 5px; //美化
+}</pre>
+        <div class="test1">
+          <p class="text">我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,</p>
+        </div>
+        <p>我们看到超出部分被隐藏了,而且最后显示...,但是此方法设只能在强制不换行的时候显示.</p>
+        <!-- 多行文本实现方式 -->
+        <h2>多行文本实现方式</h2>
+        <!-- css实现 -->
+        <h3>通过css实现(目前仅webkit浏览器支持)</h3>
+        <p>html:</p>
+        <pre>
+&lt;div class="wrap"&gt;
+  &lt;p class="text"&gt;我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,&lt;/p&gt;
+&lt;/div&gt;</pre>
+        <p>css:</p>
+        <pre>
+.test2 {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.test2 .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; //3个webkit私有属性必须同时设置
+  <span class="highlight">-webkit-line-clamp: 3; //限制显示行数</span>
+  -webkit-box-orient: vertical; //垂直排列
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}</pre>
+        <div class="test2">
+          <p class="text">我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,</p>
+        </div>
+        <p>实现多行溢出显示...显示的关键是通过webkit私有的限制行数.</p>
+        <!-- js实现 -->
+        <h3>通过js限制显示字数实现</h3>
+        <p>html:</p>
+        <pre>
+&lt;div class="wrap"&gt;
+  &lt;p class="text"&gt;我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,&lt;/p&gt;
+&lt;/div&gt;</pre>
+        <p>css:</p>
+        <pre>
+.test3 {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.test3 .text {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}</pre>
+        <p>js:</p>
+        <pre>
+function ellipsis(obj, length) {
+  var str = '',
+      //获取内容的长度
+      len = obj.text().length; 
+      //如果内容长度大于指定长度就截取字符串再拼接'...'
+  if (length < len) {
+    str = obj.text().<span class="highlight">substring(0, length) + '...'</span>;
+    //用拼接后的内容替换原内容
+    obj.text(str);
+  }
+}
+var text = $('.test3 .text');
+ellipsis(text, 120); </pre>
+        <div class="test3">
+          <p class="text">我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,我是一些测试文本,</p>
+        </div>
+        <p>通过js控制和通过css控制还是有些区别的,css是控制行数,而js需要控制准确的字符个数.js的实现原理是通过<span class="highlight">字符串截取(sbustring)拼接'...'字符串</span>,所以需要指定截取长度.</p>
       </div>
     </div>
     <!-- 文章部分结束 -->
@@ -89,5 +163,6 @@
     <!-- 返回顶部结束 -->
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/article-model.js"></script>
+    <script src="../js/css-textflow.js"></script>
   </body>
 </html>
