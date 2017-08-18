@@ -449,6 +449,11 @@ a:hover {
     line-height: 20px;
     cursor: pointer;
   }
+  .back-top img {
+  	width: 16px;
+  	height: 10px;
+  	margin-top: 6px;
+  }
 }
 .back-top:hover {
 	background: #999;
